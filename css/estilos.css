@@ -8,8 +8,9 @@ form {
   text-align: start;
 }
 
-p>label>* {
-  display: block;
+p{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 3vh;
 }
 
 mi-footer {
@@ -22,3 +23,11 @@ mi-footer {
   border-radius: 10px 20px 30px 40px;
   margin: 1.5em 1.5em;
 } 
+.border_box {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: lightblue;
+  padding: 1em;
+  border: thick solid blue;
+}
