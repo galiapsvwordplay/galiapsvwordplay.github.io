@@ -1,0 +1,19 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+form {
+  display: inline-block;
+  text-align: start;
+}
+
+p>label>* {
+  display: block;
+}
+
+mi-footer {
+  display: block;
+  margin: 1rem 0;
+  font-size: small;
+}
