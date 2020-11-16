@@ -32,3 +32,8 @@ mi-footer {
   color: #5C7BBE; 
   padding: 0.5rem 2rem;
 }
+#ahorcado {
+  height: 318px;
+  width: 307px;
+  background-image: url('./ahorcado.png');
+}
