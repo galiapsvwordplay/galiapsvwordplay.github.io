@@ -27,7 +27,8 @@ mi-footer {
   display: block;
   box-sizing: border-box;
   width: 100%;
-  background-color: lightblue;
-  padding: 1em;
-  border: thick solid blue;
+  font-size: 3vh;
+  background-color: #ACF1F7;
+  color: #5C7BBE; 
+  padding: 0.5rem 2rem;
 }
