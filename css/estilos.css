@@ -22,18 +22,19 @@ mi-footer {
   border: thick ridge #4DA9B2;
   border-radius: 10px 20px 30px 40px;
   margin: 1.5em 1.5em;
+  
 } 
 .border_box {
-  display: block;
-  box-sizing: border-box;
-  width: 100%;
-  font-size: 3vh;
+  border: thick groove cyan;
+  border-radius: 30px;
+  margin: 1.5em 1.5em;
+  font-size: 2.5vh;
   background-color: #ACF1F7;
   color: #5C7BBE; 
   padding: 0.5rem 2rem;
 }
 #ahorcado {
-  height: 318px;
-  width: 307px;
+  height: 212px;
+  width: 203px;
   background-image: url('../ahorcado.png');
 }
