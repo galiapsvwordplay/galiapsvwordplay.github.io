@@ -16,7 +16,7 @@
       <p>2.- Tienes 4 intentos para adivinar.</p>
     </div> 
     <div class="border_box">
-      <h1>Juguemos</h1>
+      <h1>Juguemos </h1>
       <form id="formSaludo">
           <label>
             <h2>Hola cual es tu nombre? </h2>
@@ -36,11 +36,11 @@
           const nombre = datos.get("nombre");
           const saludo = ctrlSaludo.calculaSaludo(nombre);
           const min=1;
-          const max=20;
+          const max=40;
           const numale= Math.floor(Math.random()* max -min +1)+ min;
           let intentos=0;
           let numero;
-          for(intentos; intentos < 5; intentos++){
+          for(intentos; intentos < 4; intentos++){
             numero=prompt(nombre + ' Ingresa un numero entre: ' + min +  ' y ' + max + '.' );
             if(numero >= min && numero <=max){
               if(numero < numale){
@@ -54,9 +54,8 @@
               alert('Debe ingresar un numero entre '+min+' y '+max);
             }
           }
-
           if(numero == numale){
-            alert('Felicidades adivinaste el numero en '+intentos+' intentos.');
+            alert('Felicidades adivinaste el numero en '+(intentos+1)+' intentos.'); 
           }else {
             alert('Agotaste tus intentos, suerte para la proxima');
           }
