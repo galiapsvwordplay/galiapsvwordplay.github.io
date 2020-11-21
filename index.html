@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saludo</title>
+    <title>Word Play </title>
     <link href="css/estilos.css" rel="stylesheet">
     <script type="module" src="cmp/mi-footer.js"></script>
   </head>
   <body>
     <h1>Adivina el Numero</h1>
     <div class="ridge">
-      <h2>Instrucciones</h2>
+      <h2>Intrucciones</h2>
       <p>1.- Ingresa tu nombre .</p>
       <p>2.- Ingresa un numero entre el rago que se te de</p>
       <p>2.- Tienes 4 intentos para adivinar.</p>
@@ -18,15 +18,11 @@
     <div class="border_box">
       <h1>Juguemos</h1>
       <form id="formSaludo">
-        <h1>Saludo</h1>
-        <p>
           <label>
-            Nombre
+            <h2>Hola cual es tu nombre? </h2>
             <input type="text" name="nombre">
           </label>
-        </p>
-        <p><button>Calcular</button></p>
-        <p><output name="salida"></output></p>
+        <p><button>Enviar</button></p>
       </form>
     </div>
     <mi-footer></mi-footer>
@@ -39,12 +35,45 @@
           const datos = new FormData(formSaludo);
           const nombre = datos.get("nombre");
           const saludo = ctrlSaludo.calculaSaludo(nombre);
-          formSaludo.salida.value = saludo;
+          const min=1;
+          const max=20;
+          const numale= Math.floor(Math.random()* max -min +1)+ min;
+          let intentos=0;
+          let numero;
+          while (intentos < 5){
+            numero=prompt(nombre + ' Ingresa un numero entre: ' + min +  ' y ' + max + '.' );
+            if(numero >= min && numero <=max){
+              if(numero < numale){
+                alert('El numero que ingreso es mas bajo');
+              }else if (numero > numale){
+                alert('El numero que ingreso es mas grande');
+              }else if(numero == numale){
+                break;
+              }
+            }else {
+              alert('Debe ingresar un numero entre '+min+' y '+max);
+            }
+          }
+          intentos++;
+
+          if(numero == numale){
+            alert('Felicidades adivinaste el numero en '+(intentos+1)+' intentos.');
+            
+          }else {
+            alert('Agotaste tus intentos, suerte para la proxima');
+          }
+          
         } catch (error) {
           console.log(error);
           formSaludo.salida.value = error.message;
+
         }
       });
+
+      
+
+
+
     </script>
   </body>
 </html>
