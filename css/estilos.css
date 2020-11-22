@@ -9,13 +9,6 @@ h1{
   font-family: sans-serif;
   font-size: 7vh;
 }
-h2{
-  color: #5C7BBE; 
-}
-p{
-  font-family: 'Quicksand', sans-serif;
-  font-size: 3vh;
-}
 form {
   display: inline-block;
   text-align: start;
@@ -38,7 +31,6 @@ mi-footer {
   
 } 
 .border_box {
-  left: auto;
   border: thick groove cyan;
   border-radius: 30px;
   margin: 1.5em 1.5em;
@@ -47,7 +39,8 @@ mi-footer {
   color: #5C7BBE; 
   padding: 0.5rem 2rem;
 }
-img {
-  float: inherit;
-  }
-  
+#ahorcado {
+  height: 212px;
+  width: 203px;
+  background-image: url('../ahorcado.png');
+}
