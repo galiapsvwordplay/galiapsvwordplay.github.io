@@ -14,7 +14,7 @@
       <h2>INSTRUCCIONES</h2>
       <p>1.- Ingresa tu nombre .</p>
       <p>2.- Ingresa un numero entre el rango que muestre</p>
-      <p>3.- Tienes 4 intentos para adivinar.</p>
+      <p>3.- Tienes 5 intentos para adivinar.</p>
       <p>Suerte!!!</p>
       <p><img src="https://media.giphy.com/media/QxGRwQPRp49SBKg5wL/giphy.gif" alt="fotos"></p>
     </div> 
@@ -45,9 +45,9 @@
             numero=prompt(nombre + ' Ingresa un numero entre: ' + min +  ' y ' + max + '.' );
             if(numero >= min && numero <=max){
               if(numero < numale){
-                alert('El numero que ingreso es mas bajo');
+                alert('El numero que ingreso debe ser mas grande');
               }else if (numero > numale){
-                alert('El numero que ingreso es mas grande');
+                alert('El numero que ingreso debe ser mas chico');
               }else if(numero == numale){
                 break;
               }
@@ -56,7 +56,7 @@
             }
           }
           if(numero == numale){
-            alert('Felicidades adivinaste el numero en '+(intentos+1)+' intentos.');
+            alert('Felicidades adivinaste el numero en '+(intentos+1)+' intentos. 🎉🎉');
             location.reload();
           }else {
             alert('Agotaste tus intentos, suerte para la proxima');
