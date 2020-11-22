@@ -2,7 +2,16 @@ body {
   font-family: sans-serif;
   text-align: center;
 }
-
+h1{
+  background-color: #78D7E0;
+  text-align: center;
+  color: #38757B;
+  font-family: sans-serif;
+  font-size: 7vh;
+}
+h2{
+  color: #5C7BBE; 
+}
 form {
   display: inline-block;
   text-align: start;
@@ -32,9 +41,4 @@ mi-footer {
   background-color: #ACF1F7;
   color: #5C7BBE; 
   padding: 0.5rem 2rem;
-}
-#ahorcado {
-  height: 212px;
-  width: 203px;
-  background-image: url('../ahorcado.png');
 }

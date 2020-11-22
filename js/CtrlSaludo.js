@@ -7,3 +7,12 @@ export class CtrlSaludo {
     return `Hola ${nombreSinEspacios}. `;
   }
 }
+
+function cargarImagen() 
+ { 
+
+ const imagen = new Image();  
+ imagen.src = https://media.giphy.com/media/8vc2rMUDjhy6Y/giphy.gif; 
+ return imagen; 
+ }
+
